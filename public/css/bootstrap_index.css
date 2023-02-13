@@ -571,7 +571,7 @@ body {
         outline: #667eea solid 1px;
     }
     main .produce .produce_box .card_box .color_box .select_box span{
-        background-image: url("/img/bs_img/chevron-down.svg");
+        background-image: url("../img/bs_img/chevron-down.svg");
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
@@ -701,7 +701,7 @@ body {
     footer .about_group .about_us .logo_box .small_logo{
         width: 40px;
         height: 40px;
-        background-image: url("/img/bs_img/small_logo.png");
+        background-image: url("../img/bs_img/small_logo.png");
         background-size: contain;
         background-position:center;
         background-repeat: no-repeat;

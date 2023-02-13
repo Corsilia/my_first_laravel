@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>假的</title>
     <!-- My CSS -->
-    <link rel="stylesheet" href="{{asset('css/index.css')}}">
-    <link rel="shortcut icon" href="{{ asset('img/windows40x40.svg')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('css/microsoft_index.css')}}">
+    <link rel="shortcut icon" href="{{ asset('img/microsoft_img/windows40x40.svg')}}" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -230,11 +230,11 @@
     <main>
         <section class="carousel">
             <div class="banner">
-                <img src="{{asset('img/Surface1920x600.jpg')}}" alt="" class="banner-xl">
-                <img src="{{asset('img/Surface1399x600.jpg')}}" alt="" class="banner-l">
-                <img src="{{asset('img/Surface1083x600.jpg')}}" alt="" class="banner-m">
-                <img src="{{asset('img/Surface859x540.jpg')}}" alt="" class="banner-s">
-                <img src="{{asset('img/Surface539x440.jpg')}}" alt="" class="banner-xs">
+                <img src="{{asset('img/microsoft_img/Surface1920x600.jpg')}}" alt="" class="banner-xl">
+                <img src="{{asset('img/microsoft_img/Surface1399x600.jpg')}}" alt="" class="banner-l">
+                <img src="{{asset('img/microsoft_img/Surface1083x600.jpg')}}" alt="" class="banner-m">
+                <img src="{{asset('img/microsoft_img/Surface859x540.jpg')}}" alt="" class="banner-s">
+                <img src="{{asset('img/microsoft_img/Surface539x440.jpg')}}" alt="" class="banner-xs">
                 <div>
                     <div class="text-case">
                         <div class="banner-text">
@@ -259,15 +259,15 @@
         <section class="chose-x3">
             <div>
                 <div class="windows1">
-                    <img src="{{asset('img/windows40x40.svg')}}" alt="">
+                    <img src="{{asset('img/microsoft_img/windows40x40.svg')}}" alt="">
                     <span><a href="#">選擇您的 Microsoft 365</a></span>
                 </div>
                 <div class="tablet">
-                    <img src="{{asset('img/tablet40x40.svg')}}" alt="">
+                    <img src="{{asset('img/microsoft_img/tablet40x40.svg')}}" alt="">
                     <span><a href="#">選購 Surface 裝置</a></span>
                 </div>
                 <div class="windows2">
-                    <img src="{{asset('img/windows40x40.svg')}}" alt="">
+                    <img src="{{asset('img/microsoft_img/windows40x40.svg')}}" alt="">
                     <span><a href="#">取得 Windows 11</a></span>
                 </div>
             </div>
@@ -276,7 +276,7 @@
             <div>
                 <div class="cards">
                     <div class="card1">
-                        <img src="{{asset('img/Content1-Card1.webp')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content1-Card1.webp')}}" alt="">
                         <span>新上市</span>
                         <h1>Surface Laptop 5</h1>
                         <p>配備細緻的風格和由第 12 代 Intel® Core™ i5/i7 處理器 (基於 Intel® Evo™ 平台) 支援的多工速度，這真是完美的禮物。</p>
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                     <div class="card2">
-                        <img src="{{asset('img/Content1-Card2.webp')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content1-Card2.webp')}}" alt="">
                         <span></span>
                         <h1>Surface Laptop Studio</h1>
                         <p>在釋放想像力的同時散播歡樂。 這款最強大的 Surface Laptop 採用前拉式螢幕設計，帶來極致創意體驗。</p>
@@ -300,7 +300,7 @@
                         </div>
                     </div>
                     <div class="card3">
-                        <img src="{{asset('img/Content1-Card3.jfif')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content1-Card3.jfif')}}" alt="">
                         <span></span>
                         <h1>Xbox Series X</h1>
                         <p>史上最快、最強大的 Xbox 做為禮物，帶來驚喜連連。</p>
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                     <div class="card4">
-                        <img src="{{asset('img/Content1-Card4.avif')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content1-Card4.avif')}}" alt="">
                         <span></span>
                         <h1>Xbox Series S</h1>
                         <p>適逢佳節，用史上最小的 Xbox 所帶來的次世代效能，達到新境界。</p>
@@ -328,11 +328,11 @@
         </section>
         <section class="carousel">
             <div class="banner">
-                <img src="{{asset('img/xbox1.jfif')}}" alt="" class="banner-xl">
-                <img src="{{asset('img/xbox2.webp')}}" alt="" class="banner-l">
-                <img src="{{asset('img/xbox3.webp')}}" alt="" class="banner-m">
-                <img src="{{asset('img/xbox4.avif')}}" alt="" class="banner-s">
-                <img src="{{asset('img/xbox5.avif')}}" alt="" class="banner-xs">
+                <img src="{{asset('img/microsoft_img/xbox1.jfif')}}" alt="" class="banner-xl">
+                <img src="{{asset('img/microsoft_img/xbox2.webp')}}" alt="" class="banner-l">
+                <img src="{{asset('img/microsoft_img/xbox3.webp')}}" alt="" class="banner-m">
+                <img src="{{asset('img/microsoft_img/xbox4.avif')}}" alt="" class="banner-s">
+                <img src="{{asset('img/microsoft_img/xbox5.avif')}}" alt="" class="banner-xs">
                 <div>
                     <div class="text-case">
                         <div class="banner-text">
@@ -350,7 +350,7 @@
                 <h1>適用於商務</h1>
                 <div class="cards">
                     <div class="card1">
-                        <img src="{{asset('img/Content2-Card1.jpg')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content2-Card1.jpg')}}" alt="">
                         <span>新上市</span>
                         <h1>Surface Pro 9</h1>
                         <p>您想要的平板電腦彈性和需要的筆記型電腦效能 — 全都在一台攜帶超方便的裝置。</p>
@@ -362,7 +362,7 @@
                         </div>
                     </div>
                     <div class="card2">
-                        <img src="{{asset('img/Content2-Card2.webp')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content2-Card2.webp')}}" alt="">
                         <span></span>
                         <h1>免費取得 Microsoft Teams</h1>
                         <p>線上會議、聊天和共用雲端儲存空間，盡在一處。</p>
@@ -374,7 +374,7 @@
                         </div>
                     </div>
                     <div class="card3">
-                        <img src="{{asset('img/Content2-Card3.webp')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content2-Card3.webp')}}" alt="">
                         <span></span>
                         <h1>在混合式環境中蓬勃發展</h1>
                         <p>探索工具、資源和策略，協助您的員工在靈活辦公的新環境中取得成功。</p>
@@ -386,7 +386,7 @@
                         </div>
                     </div>
                     <div class="card4">
-                        <img src="{{asset('img/Content2-Card4.webp')}}" alt="">
+                        <img src="{{asset('img/microsoft_img/Content2-Card4.webp')}}" alt="">
                         <span></span>
                         <h1>歡迎使用 Windows 365 雲端電腦</h1>
                         <p>從 Microsoft 雲端安全地將您的 Windows 體驗串流到任何裝置。</p>
@@ -406,12 +406,12 @@
                     <div class="focus">關注 Microsoft </div>
                     <div class="facebook">
                         <a href="#">
-                            <img src="{{asset('img/facebook.svg')}}" alt="">
+                            <img src="{{asset('img/microsoft_img/facebook.svg')}}" alt="">
                         </a>
                     </div>
                     <div class="youtube">
                         <a href="#">
-                            <img src="{{asset('img/youtube.svg')}}" alt="">
+                            <img src="{{asset('img/microsoft_img/youtube.svg')}}" alt="">
                         </a>
                     </div>
                 </div>

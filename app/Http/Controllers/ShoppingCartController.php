@@ -9,9 +9,6 @@ class ShoppingCartController extends Controller
     public function shopping_index(){
         return view('shopping.index');
     }
-    public function login(){
-        return view('shopping.login');
-    }
     public function checkout1(){
         return view('shopping.checkout1');
     }

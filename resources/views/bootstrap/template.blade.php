@@ -12,18 +12,19 @@
     </title>
 
     {{-- 共通css --}}
-    <link rel="stylesheet" href="{{asset('css/bootstrap-4.6.2-dist/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="{{asset('css/bscdn.css')}}">
-    <link rel="shortcut icon" href="{{asset('img/images/fovicon.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('img/hw_img/fovicon.ico')}}" type="image/x-icon">
 
     {{-- 各頁面專屬css --}}
+    @yield('css')
 </head>
 
 <body>
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#"><img src="{{asset('img/images/a2.png')}}" alt="LOGO"></a>
+            <a class="navbar-brand" href="/bs_index"><img src="{{asset('img/hw_img/a2.png')}}" alt="LOGO"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -98,7 +99,7 @@
         @yield('pageMain')
     </main>
     <hr>
-    <div class="hend"><img src="{{asset('img/images/aaa.png')}}" alt=""></div>
+    <div class="hend"><img src="{{asset('img/hw_img/aaa.png')}}" alt=""></div>
     <section id="contact">
         <div class="container text-center">
             <div class="row">
@@ -158,8 +159,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 
     {{-- 頁面共通Js --}}
-    <script src="{{asset('jquery.min.js')}}"></script>
-    <script src="{{asset('css/bootstrap-4.6.2-dist/js/bootstrap.bundle.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     {{-- 各頁面專用Js --}}
 </body>
 

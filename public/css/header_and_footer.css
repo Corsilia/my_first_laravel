@@ -186,7 +186,7 @@ body {
     footer .about_group .about_us .logo_box .small_logo{
         width: 40px;
         height: 40px;
-        background-image: url("/img/bs_img/small_logo.png");
+        background-image: url("../img/bs_img/small_logo.png");
         background-size: contain;
         background-position:center;
         background-repeat: no-repeat;

@@ -8,7 +8,8 @@
   <!-- Swiper Css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!-- My Css -->
-  <link rel="stylesheet" href="{{asset('css/bs_css/index.css')}}">
+  <link rel="stylesheet" href="{{asset('css/bootstrap_index.css')}}">
+
 @endsection
 @section('main')
     <section class="container-fluid swiper-box">
@@ -411,5 +412,5 @@
   <!-- Swiper Js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- My Js -->
-  <script src="{{asset('js/bs_js/index.js')}}"></script>
+  <script src="{{asset('js/index.js')}}"></script>
 @endsection

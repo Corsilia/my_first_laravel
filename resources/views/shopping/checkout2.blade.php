@@ -4,9 +4,9 @@
     @endsection
     @section('css')
     <!-- 共用的header與footer的css -->
-    <link rel="stylesheet" href="{{asset('css/bs_css/header_and_footer.css')}}">
+    <link rel="stylesheet" href="{{asset('css/header_and_footer.css')}}">
     <!-- My Css -->
-    <link rel="stylesheet" href="{{asset('css/bs_css/checkout2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/checkout2.css')}}">
     @endsection
     @section('main')
         <section>

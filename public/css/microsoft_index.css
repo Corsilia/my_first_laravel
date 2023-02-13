@@ -55,7 +55,7 @@ header>nav>label>div{
     height: 20px;
     /* 需要找到圖片不會變大但是要有13px的左右邊的方法 */
 
-    background-image: url("../img/list1.svg");
+    background-image: url("../img/microsoft_img/list1.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -97,7 +97,7 @@ header>nav>.links>a>.logo{
 
     margin: 16px 6px 16px 10px;
 
-    background-image: url("../img/RE1Mu3b.png");
+    background-image: url("../img/microsoft_img/RE1Mu3b.png");
     background-size: contain; /*不裁切*/
     background-position: center;
     background-repeat: no-repeat;
@@ -170,14 +170,14 @@ header>nav>.functions>a>.function>.search{
     width: 16px;
     height: 18px;
     margin-left: 6px;
-    background-image: url("../img/search1.svg");
+    background-image: url("../img/microsoft_img/search1.svg");
 }
 header>nav>.functions>a>.function>.shopping{
     width: 16px;
     height: 42px;
     margin-left: 6px;
 
-    background-image: url("../img/cart1.svg");
+    background-image: url("../img/microsoft_img/cart1.svg");
 }
 header>nav>.functions>a:nth-child(4)>.function>span{
     margin-right: 2px;
@@ -187,7 +187,7 @@ header>nav>.functions>a>.function>.login{
     height: 32px;
     margin: 8px;
 
-    background-image: url("../img/user.svg");
+    background-image: url("../img/microsoft_img/user.svg");
 }
 /* 所有 Microsoft清單 */
 header>nav>.functions>.all>input{
@@ -228,7 +228,7 @@ header>nav>.functions>.all>label>.icon{
     top: 10.6px;
     right: 7.5px;
 
-    background-image: url("../img/chevron-down.svg");
+    background-image: url("../img/microsoft_img/chevron-down.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -315,7 +315,7 @@ header>nav>.functions>.all>.all-menu>ul:nth-child(2)>li>a>.icon-right{
     width: 7px;
     margin-left: 8px;
 
-    background-image: url("../img/chevro-right.svg");
+    background-image: url("../img/microsoft_img/chevro-right.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -488,7 +488,7 @@ header>nav>.functions>.all>.all-menu>ul:nth-child(2)>li>a>.icon-right{
         height: 22px;
         margin-left: 2px;
 
-        background-image: url("../img/chevron-down.svg");
+        background-image: url("../img/microsoft_img/chevron-down.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
@@ -520,7 +520,7 @@ header>nav>.functions>.all>.all-menu>ul:nth-child(2)>li>a>.icon-right{
         width: 15px;
         height: 15px;
         margin: 2.5px; /*這數字是因為這div框變小了但是要讓label維持一樣大*/
-        background-image: url("../img/x2.svg");
+        background-image: url("../img/microsoft_img/x2.svg");
     }
     header>nav>.links{
         width: auto;
@@ -638,7 +638,7 @@ header>nav>.menu>section>label>.down-icon{
     margin-right: 5px;
     margin-top: 5px;
 
-    background-image: url("../img/chevron-down.svg");
+    background-image: url("../img/microsoft_img/chevron-down.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -667,7 +667,7 @@ header>nav>.menu>section>input:checked + label + ul{
     display: block;
 }
 header>nav>.menu>section>input:checked + label>.down-icon{
-    background-image: url("../img/chevron-up.svg");
+    background-image: url("../img/microsoft_img/chevron-up.svg");
 }
 /* 漢堡條清單完成 */
 
@@ -923,7 +923,7 @@ main>.carousel>.control>div:nth-child(2){
 main>.carousel>.control>div>.goleft{
     width: 22px;
     height: 26px;
-    background-image: url("../img/goleft.svg");
+    background-image: url("../img/microsoft_img/goleft.svg");
 }
 
 main>.carousel>.control>div>.dot1{
@@ -931,7 +931,7 @@ main>.carousel>.control>div>.dot1{
     height: 10px;
 
     border-radius: 5px;
-    background-image: url("../img/ring.svg");
+    background-image: url("../img/microsoft_img/ring.svg");
     background-color: #000;
 }
 main>.carousel>.control>div>.dot2{
@@ -939,12 +939,12 @@ main>.carousel>.control>div>.dot2{
     height: 10px;
 
     border-radius: 5px;
-    background-image: url("../img/ring.svg");
+    background-image: url("../img/microsoft_img/ring.svg");
 }
 main>.carousel>.control>div>.goright{
     width: 22px;
     height: 26px;
-    background-image: url("../img/goright.svg");
+    background-image: url("../img/microsoft_img/goright.svg");
 }
 /* control控制完成 */
 
@@ -1168,7 +1168,7 @@ main>.content>div>.cards>div>div>a>.goright-icon{
     top: 0px;
     right: 0px;
 
-    background-image: url("../img/goright-red.svg");
+    background-image: url("../img/microsoft_img/goright-red.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1325,7 +1325,7 @@ main>.gotop>a>span{
     cursor: pointer;
 }
 main>.gotop>a>span::before{
-    content: url("../img/up.svg");
+    content: url("../img/microsoft_img/up.svg");
     width: 13px;
     margin-right: 7px;
 
@@ -1425,7 +1425,7 @@ footer>div>.last>.left>a>.earth{
     height: 20px;
     margin-right: 10px;
 
-    background-image: url("../img/earth.svg");
+    background-image: url("../img/microsoft_img/earth.svg");
 }
 footer>div>.last>.right{
     margin-bottom: 3px;

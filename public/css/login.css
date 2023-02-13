@@ -38,7 +38,7 @@
     box-sizing: border-box;
 }
 main{
-    background-image: url("/img/bs_img/1920x1080.png");
+    background-image: url("../img/bs_img/1920x1080.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ main .input_container .container .logo_box a span{
     display: block;
     width: 64px;
     height: 64px;
-    background-image: url("/img/bs_img/small_logo.png");
+    background-image: url("../img/bs_img/small_logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

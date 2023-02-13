@@ -10,7 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Fontawesome Css -->
     <link rel="stylesheet" href="https://kit.fontawesome.com/da58ed1c4d.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('css/bs_css/login.css')}}">
+    <link rel="stylesheet" href="{{asset('css/login.css')}}">
 </head>
 <body>
     <main>
