@@ -15,7 +15,6 @@ class Controller extends BaseController
         return view('welcome');
     }
 
-
     public function say(){
         return 'Hello 我在這';
     }

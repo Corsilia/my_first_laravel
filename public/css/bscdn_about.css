@@ -1,0 +1,53 @@
+#header nav{
+    font-size: 20pt;
+}
+#header button{
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.carousel-control-next{
+    color: brown;
+}
+.hend{
+    width: 40px;
+    height: 60px;
+    position: relative;
+    top: -45px;
+    left: calc(50% - 20px);
+}
+.hend img{
+    width: 100%;
+    height: 100%;
+}
+.inpu button{
+    margin-top: 10px;
+    height: 40px;
+    line-height: 20px;
+    padding: 0rem 0.75rem;
+}
+input{
+    border-radius: 10px;
+    width: 100%;
+}
+#contact{
+    background-color: rgb(150, 153, 140);
+    padding-top: 30px;
+}
+#contact i{
+    cursor: pointer;
+}
+#contact h4{
+    font-size: 24pt;
+}
+#contact a{
+    color: darkgreen;
+}
+#contact a:hover{
+    color: rgb(0, 27, 100);
+}
+#footer{
+    background-color: #343a40;
+    color: rgb(252, 179, 179);
+}

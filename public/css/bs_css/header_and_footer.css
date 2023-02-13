@@ -1,0 +1,305 @@
+body {
+          font-size: 16px;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+    /* 版型設定 */
+    .container{
+        max-width: 1536px;
+    }
+    @media screen and (max-width: 1536px){
+        .container{
+            max-width: 1280px;
+        }
+    }
+    @media screen and (max-width: 1280px){
+        .container{
+            max-width: 1024px;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        .container{
+            max-width: 768px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .container{
+            max-width: 640px;
+        }
+    }
+    @media screen and (max-width: 640px){
+        .container{
+            max-width: 100%;
+        }
+    }
+
+    /* 自訂紫色按鈕 */
+    .btn-purple {
+        color: #fff;
+        background-color: rgb(99,102,241);
+        border-color: rgb(99,102,241);
+        font-size: 18px;
+      }
+      .btn-purple:hover {
+        color: #fff;
+        background-color: rgb(65, 67, 188);
+        border-color: rgb(65, 67, 188);
+      }
+      .btn-check:focus + .btn-purple, .btn-purple:focus {
+        color: #fff;
+        background-color: rgb(43, 45, 173);
+        border-color: rgb(65, 67, 188);
+        box-shadow: 0 0 0 0.25rem rgba(36, 37, 133, 0.5);
+      }
+      .btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+        color: #fff;
+        background-color: rgb(65, 67, 188);
+        border-color: rgb(36, 37, 133);
+      }
+      .btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.25rem rgba(36, 37, 133, 0.5);
+      }
+      .btn-purple:disabled, .btn-purple.disabled {
+        color: #fff;
+        background-color: rgb(99,102,241);
+        border-color: rgb(99,102,241);
+      }
+
+
+    /* 共用header */
+    header .navbar {
+        padding: 0px;
+    }
+
+    header nav .container {
+        max-width: 1280px;
+        padding: 0px 2rem;
+    }
+
+    header nav .container a {
+        padding: 1rem;
+    }
+
+    header nav .container a img {
+        height: 60px;
+    }
+    header nav .container a img:active{
+        background-color: rgb(243,244,246);
+        outline: 1px solid rgb(17, 24, 39);
+        border-radius: 5px;
+    }
+    header nav .container .collapse ul li a .fas {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    header nav .container .collapse ul li a .fas.fa-shopping-cart {
+        font-size: 24px;
+    }
+    header nav .container .collapse ul li a:active {
+        background-color: rgb(243,244,246);
+        outline: 1px solid rgb(17, 24, 39);
+        border-radius: 5px;
+    }
+
+    header nav .container .collapse .navbar-nav li a {
+        font-size: 14px;
+        color: #374151;
+    }
+
+    header nav .container .collapse ul li .nav-link {
+        border-radius: 10px;
+        transition: background-color .3s;
+    }
+
+
+    header nav .container .collapse ul .nav_text a:hover {
+        background-color: rgb(229 231 235);
+    }
+
+    header nav .container a:focus-visible {
+        outline: unset;
+    }
+    header nav .container .nav_text a:focus-visible {
+        background-color: rgb(229 231 235);
+    }
+
+    header nav .container .navbar-brand:focus-visible {
+        background-color: transparent;
+    }
+
+    header nav .container .navbar-brand:focus-visible img {
+        outline: black 1px solid;
+    }
+    header nav .container .collapse .navbar-nav li:last-child{
+        position: relative;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul{
+        border-radius: 8px;
+        left: unset;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul li{
+        padding: 4px 8px;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul li a{
+        color:#374151;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul li a:active{
+        background-color: rgb(243,244,246);
+        outline: 1px solid rgb(17, 24, 39);
+    }
+
+    @media screen and (max-width:768px){
+        header nav .container .collapse .navbar-nav li:last-child ul{
+            width: 100%;
+            position: absolute;
+            top: 62px;
+            left: 0px;
+        }
+        header nav .container .collapse .navbar-nav li:last-child ul li{
+            padding: unset;
+        }
+        header nav .container .collapse .navbar-nav li:last-child ul li a{
+            padding: 8px 16px;
+        }
+    }
+
+    /* 共用footer */
+    footer{
+        width: 100%;
+    }
+
+    footer .about_group {
+        background-color: #fff;
+        padding: 96px 20px;
+        display: flex;
+    }
+    footer .about_group .about_us{
+        width: 256px;
+    }
+    footer .about_group .about_us .logo_box .small_logo{
+        width: 40px;
+        height: 40px;
+        background-image: url("/img/bs_img/small_logo.png");
+        background-size: contain;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    footer .about_group .about_us .logo_box{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    footer .about_group .about_us .logo_box h1{
+        font-size: 20px;
+        margin: unset;
+        margin-left: 12px;
+    }
+    footer .about_group .about_us p{
+        font-size: 14px;
+        color: rgb(107, 114, 128);
+        margin-top: 8px;
+    }
+    footer .about_group .catego_box{
+        width: calc(100% - 256px);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer .about_group .catego_box .catego{
+        width: 25%;
+        padding: 0px 16px;
+    }
+    footer .about_group .catego_box{
+        padding-left: 80px;
+    }
+    footer .about_group .catego_box .catego ul{
+        padding: unset;
+    }
+    footer .about_group .catego_box .catego ul li{
+        list-style-type: none;
+    }
+    footer .about_group .catego_box .catego ul li a{
+        text-decoration: none;
+        color: rgb(75, 85, 99);
+    }
+    footer .about_group .catego_box .catego h1{
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(17, 24, 39);
+        letter-spacing: 0.1rem;
+        margin-bottom: 12px;
+    }
+    @media screen and (max-width:1024px){
+        footer .about_group .catego_box{
+            flex-wrap: wrap;
+        }
+        footer .about_group .catego_box .catego{
+            width: 50%;
+            padding: 16px;
+        }
+        footer .about_group .about_us{
+            align-self: center;
+        }
+    }
+    @media screen and (max-width:768px){
+        footer .about_group{
+            flex-direction: column;
+        }
+        footer .about_group .catego_box{
+            width: 100%;
+            padding-left: 0px;
+        }
+        footer .about_group .about_us .logo_box{
+            margin: auto;
+            justify-content: center;
+        }
+        footer .about_group .about_us p{
+            text-align: center;
+        }
+        footer .about_group .catego_box{
+            width: 100%;
+            flex-direction: column;
+        }
+        footer .about_group .catego_box .catego{
+            text-align: center;
+        }
+    }
+    footer .background-color_mask{
+        width: 100%;
+        background-color: rgb(243,244,246);
+    }
+    footer .background-color_mask .copy_right_group{
+        width: 100%;
+        color: rgb(75, 85, 99);
+        font-size: 14px;
+        line-height: 20px;
+        padding: 16px 20px;
+    }
+
+    footer .background-color_mask .copy_right_group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .background-color_mask .copy_right_group .follow{
+        font-size: 18px;
+    }
+    footer .background-color_mask .copy_right_group .follow a{
+        margin-right: 8px;
+        color: rgb(107, 114, 128);
+    }
+    @media screen and (max-width:640px){
+        footer .background-color_mask .copy_right_group{
+            flex-direction: column;
+        }
+        footer .background-color_mask .copy_right_group .follow{
+            margin-top: 8px;
+        }
+    }

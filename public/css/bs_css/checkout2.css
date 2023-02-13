@@ -1,0 +1,170 @@
+main{
+    background-color: rgb(209, 213, 219);
+    padding: 48px 0px;
+}
+main section{
+    width: 100%;
+    max-width: 1024px;
+    background-color: rgb(243, 244, 246);
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+main section h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+main section .content .process{
+    padding: 24px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main section .content .process .process_project{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+main section .content .process .process_project .round_project{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    font-size: 18px;
+    margin: 8px;
+}
+main section .content .process .process_project span{
+    white-space: nowrap;
+}
+main section .content .process .process_project:first-child .round_project, main section .content .process .process_project:nth-child(2) .round_project{
+    background-color: rgb(16, 185, 129);
+    color: #fff;
+}
+main section .content .process .progress_line{
+    width: 70%;
+    height: 8px;
+    position: absolute;
+    top: 32%;
+    left: 65%;
+
+}
+main section .content .process .progress_line .progress{
+    height: 100%;
+}
+main section .content .process .progress_line .progress .progress-bar{
+    background-color: rgb(110, 231, 183);
+    border-radius: 0.25rem;
+}
+@media screen and (max-width:767px){
+    main section{
+        max-width: 448px;
+    }
+    main section .content .process .progress_line{
+        width: 45%;
+        left: 78%;
+    }
+    main section .content .process .process_project span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:439px){
+    main section{
+        padding: 40px 10px;
+    }
+    main section .content .process .progress_line{
+        width: 30%;
+        left: 84%;
+    }
+}
+@media screen and (max-width:335px){
+    main section{
+        padding: 40px 0px;
+    }
+}
+/* 放新的程式碼 */
+main section .content .pay_way_group{
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+    padding: 24px 0px;
+}
+main section .content .transport_way_group{
+    padding: 24px 0px;
+}
+main section .content .transport_way_group{
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+main section .content .pay_way_group h2, main section .content .transport_way_group h2{
+    font-size: 24px;
+}
+main section .content .pay_way_group .pay_ways, main section .content .transport_way_group .transport_ways{
+    margin: 0px 24px;
+}
+main section .content .pay_way_group .pay_ways .pay_way, main section .content .transport_way_group .transport_ways .transport_way{
+    border-bottom: 2px solid rgb(229, 231, 235);
+    padding: 24px 0px;
+}
+main section .content .pay_way_group .pay_ways .pay_way label, main section .content .transport_way_group .transport_ways .transport_way label{
+    margin-left: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+main section .content .pay_way_group .pay_ways .pay_way:last-child, main section .content .transport_way_group .transport_ways .transport_way:last-child{
+    border-bottom: unset;
+}
+
+
+main section .content .price_box{
+    margin: 24px 0px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+main section .content .price_box>div{
+    width: 200px;
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section .content .price_box>div .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(156, 163, 175);
+}
+main section .content .price_box>div .price{
+    font-size: 18px;
+    font-weight: 700;
+}
+@media screen and (max-width:474px){
+    main section .content .price_box{
+        align-items: center;
+        margin: 24px 0px;
+    }
+    main section .content .price_box>div{
+        width: 100%;
+    }
+}
+main section .control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section .control a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:326px) {
+    /* 本來放list */
+}

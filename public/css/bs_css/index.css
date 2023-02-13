@@ -1,0 +1,820 @@
+/* 這邊額外去修改container是因為老師範例使用Tailwindcss的版型大小 */
+    .container{
+        max-width: 1536px;
+    }
+@media screen and (max-width: 1536px){
+    .container{
+        max-width: 1280px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .container{
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .container{
+        max-width: 768px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 640px;
+    }
+}
+@media screen and (max-width: 640px){
+    .container{
+        max-width: 100%;
+    }
+}
+
+    /* Google map */
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 100%;
+        height: 700px;
+      }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 100%;
+        height: 700px;
+      }
+      .gmap_iframe {
+        height: 700px !important;
+      }
+
+body {
+  /* 字形是挖過來的(似乎是tailwind的) */
+        font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 16px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img{
+        object-fit: cover; /*讓圖片不變形*/
+    }
+
+    /* 自訂紫色按鈕 */
+.btn-purple {
+  color: #fff;
+  background-color: rgb(99,102,241);
+  border-color: rgb(99,102,241);
+  font-size: 18px;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: rgb(65, 67, 188);
+  border-color: rgb(65, 67, 188);
+}
+.btn-check:focus + .btn-purple, .btn-purple:focus {
+  color: #fff;
+  background-color: rgb(43, 45, 173);
+  border-color: rgb(65, 67, 188);
+  box-shadow: 0 0 0 0.25rem rgba(36, 37, 133, 0.5);
+}
+.btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: rgb(65, 67, 188);
+  border-color: rgb(36, 37, 133);
+}
+.btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(36, 37, 133, 0.5);
+}
+.btn-purple:disabled, .btn-purple.disabled {
+  color: #fff;
+  background-color: rgb(99,102,241);
+  border-color: rgb(99,102,241);
+}
+
+
+
+    header .navbar {
+        padding: 0px;
+    }
+
+    header nav .container {
+        max-width: 1280px;
+        padding: 0px 2rem;
+    }
+
+    header nav .container a {
+        padding: 1rem;
+    }
+
+    header nav .container a img {
+        height: 60px;
+    }
+    header nav .container a img:active{
+        background-color: rgb(243,244,246);
+        outline: 1px solid rgb(17, 24, 39);
+        border-radius: 5px;
+    }
+    header nav .container .collapse ul li a .fas {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    header nav .container .collapse ul li a .fas.fa-shopping-cart {
+        font-size: 24px;
+    }
+    header nav .container .collapse ul li a:active {
+        background-color: rgb(243,244,246);
+        outline: 1px solid rgb(17, 24, 39);
+        border-radius: 5px;
+    }
+
+    header nav .container .collapse .navbar-nav li a {
+        font-size: 14px;
+        color: #374151;
+    }
+
+    header nav .container .collapse ul li .nav-link {
+        border-radius: 10px;
+        transition: background-color .3s;
+    }
+
+
+    header nav .container .collapse ul .nav_text a:hover {
+        background-color: rgb(229 231 235);
+    }
+
+    header nav .container a:focus-visible {
+        outline: unset;
+    }
+    header nav .container .nav_text a:focus-visible {
+        background-color: rgb(229 231 235);
+    }
+
+    header nav .container .navbar-brand:focus-visible {
+        background-color: transparent;
+    }
+
+    header nav .container .navbar-brand:focus-visible img {
+        outline: black 1px solid;
+    }
+    header nav .container .collapse .navbar-nav li:last-child{
+        position: relative;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul{
+        border-radius: 8px;
+        left: unset;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul li{
+        padding: 4px 8px;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul li a{
+        color:#374151;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+    header nav .container .collapse .navbar-nav li:last-child ul li a:active{
+        background-color: rgb(243,244,246);
+        outline: 1px solid rgb(17, 24, 39);
+    }
+
+    @media screen and (max-width:768px){
+        header nav .container .collapse .navbar-nav li:last-child ul{
+            width: 100%;
+            position: absolute;
+            top: 62px;
+            left: 0px;
+        }
+        header nav .container .collapse .navbar-nav li:last-child ul li{
+            padding: unset;
+        }
+        header nav .container .collapse .navbar-nav li:last-child ul li a{
+            padding: 8px 16px;
+        }
+    }
+    /* main .swiper-box */
+    main .swiper-box {
+        width: 100%;
+        height: calc(100vh - 92px);
+        background-color: #eaeaea;
+        position: relative;
+    }
+    /* TODO:尚須搞懂輪播條的RWD高度 */
+    @media screen and (max-width:768px){
+        main .swiper-box{
+            height: 100vw;
+        }
+    }
+    main .swiper-box .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .swiper-box .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .swiper-box .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .swiper-box .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .swiper-box .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main .container{
+        padding: 6rem 1.25rem;
+        /* background-color: #fff; */
+    }
+    main .card_group .container>p {
+        width: 50%;
+        color: rgb(75,85,99);
+    }
+    @media screen and (max-width:768px){
+        main .card_group .container>p {
+            width: 100%;
+        }
+        main .card_group .container .row .card{
+            margin-bottom: 24PX;
+        }
+        main .card_group .container .row .card:last-child{
+            margin-bottom: unset;
+        }
+    }
+    main .card_group .container .decorate{
+        width: 64px;
+        height: 4px;
+        background-color: rgb(99,102,241);
+        margin: 30px auto 80px;
+    }
+    main .card_group .container .row .card{
+        border: unset;
+    }
+    main .card_group .container .row .card img{
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    main .card_group .container .row .card .card-body{
+        padding: 0px;
+    }
+    main .card_group .container .row .card .card-body a{
+        color: rgb(99,102,241);
+    }
+    main .card_group .container .row .button button{
+        width: 121px;
+        height: 44px;
+        margin-top: 64px;
+    }
+    main .img_group .row:first-child{
+        margin-bottom: 80px;
+    }
+    main .img_group .row .left-content, main .img_group .row .right-content{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    main .img_group .row .left-content div img, main .img_group .row .right-content div img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    main .img_group .row .left-content .row .h-1of3, main .img_group .row .right-content .row .h-1of3{
+        height: calc(100% / 3);
+    }
+    main .img_group .row .left-content .row .h-2of3, main .img_group .row .right-content .row .h-2of3{
+        height: calc(100% / 3 * 2);
+    }
+    main .table_group .container .row:first-child{
+        margin-bottom: 80px;
+    }
+    main .table_group .container .row{
+        width: calc(100% / 3 * 2);
+    }
+    main .table_group .container .row:nth-child(2){
+        overflow: auto;
+    }
+    main .table_group .container .row .table thead{
+        font-size: 14px;
+    }
+    main .table_group .container .row .table th{
+        background-color: rgb(243,244,246);
+        font-weight: 500;
+    }
+    main .table_group .container .row .table tbody{
+        border-top: unset;
+    }
+    main .table_group .container .row .table thead tr th, main .table_group .container .row .table tbody tr td{
+        padding: 12px 16px;
+    }
+    main .table_group .container .row .table tbody tr td{
+        color: rgb(75, 85, 99);
+    }
+    main .table_group .container .row .table tbody tr td:nth-child(4){
+        font-size: 18px;
+        color: black;
+    }
+    main .table_group .container .btn_row{
+        width: calc(100% / 3 * 2);
+        display: flex;
+        justify-content: space-between;
+    }
+    main .table_group .container .btn_row a{
+        color: rgb(99,102,241);
+    }
+    @media screen and (max-width:1024px){
+        main .table_group .container .row{
+            width: 100%;
+        }
+    }
+    main .card4_group .row h1::after{
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: rgb(99,102,241);
+        border-radius: 2px;
+        margin-top: 8px;
+    }
+    main .card4_group .row:first-child{
+        margin-bottom: 80px;
+    }
+    main .card4_group .row .card{
+        background-color: #f3f4f6;
+        padding: 24px;
+        border-radius: 5px;
+        border: unset;
+    }
+    main .card4_group .row .card img{
+        height: 160px;
+        border-radius: 5px;
+
+    }
+    @media screen and (max-width: 1280px) and (min-width: 1024px){
+        main .card4_group .row>div{
+            width: 50%;
+        }
+    }
+    main .card4_group .row .card .card-body .small-title{
+        color: rgb(99,102,241);
+        font-size: 12px;
+    }
+    main .card4_group .row .card .card-body{
+        padding: unset;
+    }
+    main .row3_group .row{
+        width: 60%;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgb(229,231,235);
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    main .row3_group .row>div{
+        /* 爆版，設定為壓縮 */
+        flex-shrink: 1;
+        padding: 0px;
+    }
+    main .row3_group .row img{
+        display: block;
+        width: 128px;
+        height: 128px;
+        margin-right: 40px;
+        padding: unset;
+        object-fit: contain;
+    }
+    main .row3_group .row div h1{
+        color: rgb(17, 24, 39);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    main .row3_group .row div p{
+        font-size: 16px;
+        color: rgb(75, 85, 99);
+    }
+    main .row3_group .row div a{
+        padding: unset;
+        color: rgb(99,102,241);
+    }
+    main .row3_group .row:nth-child(2) img{
+        order: 1;
+        margin-right: unset;
+        margin-left: 40px;
+    }
+
+    @media screen and (max-width: 1024px){
+        main .row3_group .row{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:639px){
+        main .row3_group .row{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        main .row3_group .row img{
+            width: 80px;
+            height: 80px;
+            margin: unset;
+        }
+        main .row3_group .row:nth-child(2) img{
+            order: unset;
+            margin: unset;
+        }
+        main .row3_group .row div{
+            margin-top: 24px;
+        }
+        main .row3_group .row div h1{
+            margin-bottom: 8px;
+        }
+    }
+    main .row3_group .row.row-last{
+        border-bottom: unset;
+    }
+    main .row3_group button{
+        width: 121px;
+        height: 44px;
+        display: block;
+    }
+    main .produce{
+        padding: 96px 20px;
+    }
+
+    main .produce .produce_box{
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    main .produce .produce_box .img_box img{
+        height: 100%;
+        object-fit: cover;
+    }
+    @media screen and (max-width:1024px) and (min-width:991px){
+        main .produce .produce_box{
+            margin: 0px;
+        }
+        main .produce .produce_box{
+            width: 100%;
+        }
+    }
+    main .produce .produce_box .card_box{
+        padding: 24px 0px 24px 40px;
+    }
+    @media screen and (max-width:991px){
+        main .produce .produce_box{
+            width: 100%;
+        }
+        main .produce .produce_box .img_box img{
+            height: 256px;
+        }
+        main .produce .produce_box .card_box{
+            padding-left: 0px;
+        }
+    }
+    main .produce .produce_box .card_box p{
+        margin: unset;
+        color: rgb(107,114,128);
+    }
+    main .produce .produce_box .card_box h1{
+        font-size: 30px;
+    }
+    main .produce .produce_box .card_box .reviews_box{
+        display: flex;
+        align-items: center;
+    }
+    main .produce .produce_box .card_box .reviews_box span{
+        height: 36px;
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+    }
+    main .produce .produce_box .card_box .reviews_box span:last-child{
+        border-left: 2px solid rgb(229,231,235);
+        padding: 0px 12px;
+        margin-right: unset;
+    }
+    @media screen and (max-width:290px) {
+        main .produce .produce_box .card_box .reviews_box{
+            flex-direction: column;
+        }
+    }
+    main .produce .produce_box .card_box .reviews_box span svg{
+        width: 16px;
+        height: 16px;
+        color: rgb(99,102,241);
+    }
+    main .produce .produce_box .card_box .reviews_box span svg:last-child{
+        /* fill填充 stroke邊框 */
+        fill: none;
+    }
+    main .produce .produce_box .card_box .reviews_box span:last-child i{
+        font-size: 18px;
+        margin-right: 5px;
+        color: rgb(107, 114, 128);
+    }
+    main .produce .produce_box .card_box .color_box{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid rgb(243,244,246);
+    }
+    main .produce .produce_box .card_box .color_box span{
+        margin-right: 12px;
+    }
+    main .produce .produce_box .card_box .color_box span button{
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        border: 2px solid rgb(209, 213, 219);
+        outline: 0px solid transparent;
+        transition: outline .1s;
+    }
+    main .produce .produce_box .card_box .color_box span button.button_white{
+        background-color: #fff;
+    }
+    main .produce .produce_box .card_box .color_box span button.button_black{
+        background-color: #000;
+    }
+    main .produce .produce_box .card_box .color_box span button.button_purple{
+        background-color: rgb(99, 102, 241);
+    }
+    main .produce .produce_box .card_box .color_box span button:active{
+        outline: 1px solid rgb(107, 114, 128);
+    }
+    main .produce .produce_box .card_box .color_box .select_box{
+        position: relative;
+    }
+    main .produce .produce_box .card_box .color_box .select_box select{
+        appearance: none;
+        border: 1px rgb(209, 213, 219) solid;
+        border-radius: 5px;
+        padding: 8px 40px 8px 12px;
+    }
+    main .produce .produce_box .card_box .color_box .select_box select:focus-visible{
+        outline: #667eea solid 1px;
+    }
+    main .produce .produce_box .card_box .color_box .select_box span{
+        background-image: url("/img/bs_img/chevron-down.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    main .produce .produce_box .card_box .price_box{
+        height: 40px;
+    }
+    main .produce .produce_box .card_box .price_box .btn_icon button{
+        font-size: 16px;
+    }
+    main .produce .produce_box .card_box .price_box .btn_icon i{
+        color: rgb(107, 114, 128);
+    }
+    main .card_8_group{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .card_8_group .card{
+        width: 25%;
+        border: unset;
+    }
+    main .card_8_group .card img{
+        width: 100%;
+        height: 192px;
+    }
+    main .card_8_group .card .card-body{
+        padding: 0px;
+        margin-top: 16px;
+    }
+    main .card_8_group .card .card-body span:first-child{
+        font-size: 12px;
+        color: rgb(107, 114, 128);
+    }
+    main .card_8_group .card .card-body h1{
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    main .card_8_group .card .card-body span:last-child{
+        color: rgb(75, 85, 99);
+    }
+    @media screen and (max-width:1024px){
+        main .card_8_group{
+            padding: 6rem 0px;
+        }
+        main .card_8_group .card{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:768px){
+        main .card_8_group .card{
+            width: 100%;
+        }
+    }
+    main .map_group{
+        position: relative;
+    }
+    main .map_group .mapouter {
+        filter: grayscale(1) contrast(0.9) opacity(0.7);
+    }
+    main .map_group .map_input{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        pointer-events: none;
+    }
+    main .map_group .map_input .input{
+        width: calc(100% / 3);
+        height: 504px;
+        padding: 32px;
+        background-color: #fff;
+        border-radius: 10px;
+        color: rgb(75, 85, 99);
+        pointer-events: auto;
+    }
+    @media screen and (max-width:1024px){
+        main .map_group .map_input .input{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:768px){
+        main .map_group .map_input .input{
+            width: 100%;
+        }
+    }
+    main .map_group .map_input .input h1{
+        font-size: 18px;
+        color: rgb(17, 24, 39);
+    }
+    main .map_group .map_input .input label{
+        font-size: 14px;
+        margin-bottom: unset;
+    }
+    main .map_group .map_input .input button{
+        width: 100%;
+        margin-top: 4px;
+    }
+    main .map_group .map_input .input p:last-child{
+        margin-top: 12px;
+        font-size: 12px;
+        color: rgb(107, 114, 128);
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+    }
+
+    footer .about_group {
+        background-color: #fff;
+        padding: 96px 20px;
+        display: flex;
+    }
+    footer .about_group .about_us{
+        width: 256px;
+    }
+    footer .about_group .about_us .logo_box .small_logo{
+        width: 40px;
+        height: 40px;
+        background-image: url("/img/bs_img/small_logo.png");
+        background-size: contain;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    footer .about_group .about_us .logo_box{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    footer .about_group .about_us .logo_box h1{
+        font-size: 20px;
+        margin: unset;
+        margin-left: 12px;
+    }
+    footer .about_group .about_us p{
+        font-size: 14px;
+        color: rgb(107, 114, 128);
+        margin-top: 8px;
+    }
+    footer .about_group .catego_box{
+        width: calc(100% - 256px);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer .about_group .catego_box .catego{
+        width: 25%;
+        padding: 0px 16px;
+    }
+    footer .about_group .catego_box{
+        padding-left: 80px;
+    }
+    footer .about_group .catego_box .catego ul{
+        padding: unset;
+    }
+    footer .about_group .catego_box .catego ul li{
+        list-style-type: none;
+    }
+    footer .about_group .catego_box .catego ul li a{
+        text-decoration: none;
+        color: rgb(75, 85, 99);
+    }
+    footer .about_group .catego_box .catego h1{
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(17, 24, 39);
+        letter-spacing: 0.1rem;
+        margin-bottom: 12px;
+    }
+    @media screen and (max-width:1024px){
+        footer .about_group .catego_box{
+            flex-wrap: wrap;
+        }
+        footer .about_group .catego_box .catego{
+            width: 50%;
+            padding: 16px;
+        }
+        footer .about_group .about_us{
+            align-self: center;
+        }
+    }
+    @media screen and (max-width:768px){
+        footer .about_group{
+            flex-direction: column;
+        }
+        footer .about_group .catego_box{
+            width: 100%;
+            padding-left: 0px;
+        }
+        footer .about_group .about_us .logo_box{
+            margin: auto;
+            justify-content: center;
+        }
+        footer .about_group .about_us p{
+            text-align: center;
+        }
+        footer .about_group .catego_box{
+            width: 100%;
+            flex-direction: column;
+        }
+        footer .about_group .catego_box .catego{
+            text-align: center;
+        }
+    }
+    footer .background-color_mask{
+        width: 100%;
+        background-color: rgb(243,244,246);
+    }
+    footer .background-color_mask .copy_right_group{
+        width: 100%;
+        color: rgb(75, 85, 99);
+        font-size: 14px;
+        line-height: 20px;
+        padding: 16px 20px;
+    }
+
+    footer .background-color_mask .copy_right_group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .background-color_mask .copy_right_group .follow{
+        font-size: 18px;
+    }
+    footer .background-color_mask .copy_right_group .follow a{
+        margin-right: 8px;
+        color: rgb(107, 114, 128);
+    }
+    @media screen and (max-width:640px){
+        footer .background-color_mask .copy_right_group{
+            flex-direction: column;
+        }
+        footer .background-color_mask .copy_right_group .follow{
+            margin-top: 8px;
+        }
+    }

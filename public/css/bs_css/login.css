@@ -1,0 +1,236 @@
+    /* 自訂紫色按鈕 */
+    .btn-purple {
+        color: #fff;
+        background-color: rgb(99,102,241);
+        border-color: rgb(99,102,241);
+        font-size: 18px;
+      }
+      .btn-purple:hover {
+        color: #fff;
+        background-color: rgb(65, 67, 188);
+        border-color: rgb(65, 67, 188);
+      }
+      .btn-check:focus + .btn-purple, .btn-purple:focus {
+        color: #fff;
+        background-color: rgb(43, 45, 173);
+        border-color: rgb(65, 67, 188);
+        box-shadow: 0 0 0 0.25rem rgba(36, 37, 133, 0.5);
+      }
+      .btn-check:checked + .btn-purple, .btn-check:active + .btn-purple, .btn-purple:active, .btn-purple.active, .show > .btn-purple.dropdown-toggle {
+        color: #fff;
+        background-color: rgb(65, 67, 188);
+        border-color: rgb(36, 37, 133);
+      }
+      .btn-check:checked + .btn-purple:focus, .btn-check:active + .btn-purple:focus, .btn-purple:active:focus, .btn-purple.active:focus, .show > .btn-purple.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.25rem rgba(36, 37, 133, 0.5);
+      }
+      .btn-purple:disabled, .btn-purple.disabled {
+        color: #fff;
+        background-color: rgb(99,102,241);
+        border-color: rgb(99,102,241);
+      }
+
+
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-image: url("/img/bs_img/1920x1080.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+main .content{
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .content .slogan{
+    padding: 0px 96px;
+    color: #fff;
+}
+main .content .slogan h1{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: unset;
+}
+main .content .slogan p{
+    font-size: 30px;
+    line-height: 36px;
+    margin: 16px 0px;
+}
+main .content .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .content .footer a{
+    font-size: 30px;
+    color: #fff;
+    padding: 8px;
+}
+main .input_container{
+    width: 50%;
+    height: 100vh;
+    padding: 0px 64px;
+    background-color: rgb(22, 36, 70);
+    color: white;
+    transition: width .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .input_container .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .input_container .container .logo_box{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+main .input_container .container .logo_box:hover{
+    text-shadow: 3px 3px 2px rgb(0, 4, 15);
+}
+main .input_container .container .logo_box:hover span{
+    filter: drop-shadow(0px 0px 2px rgb(243, 190, 57));
+}
+main .input_container .container .logo_box a{
+    text-decoration: none;
+    color: #fff;
+}
+main .input_container .container .logo_box a span{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url("/img/bs_img/small_logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main .input_container .container .logo_box a h1{
+    margin-left: 12px;
+    font-weight: 700;
+}
+main .input_container .container .login_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .input_container .container .login_icon a {
+    width: 40px;
+    height: 40px;
+    border: 1px white solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 6px;
+}
+main .input_container .container .login_icon a i{
+    font-size: 18px;
+    color: white;
+}
+main .input_container .container .input_box{
+    width: calc(100% / 3 * 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main .input_container .container .input_box form{
+    width: 100%;
+}
+main .input_container .container .input_box form input{
+    border-radius: unset;
+    background-color: #000;
+    border: unset;
+    font-size: 18px;
+}
+main .input_container .container .input_box form input[type="password"]{
+    margin-bottom: 8px;
+}
+main .input_container .container .input_box form a{
+    display: block;
+    text-align: end;
+}
+main .input_container .container .input_box form input:focus{
+    box-shadow: 0 0 0 0.05rem rgb(255 255 255);
+    border-radius: 2px;
+}
+main .input_container .container .input_box form a{
+    color: rgb(159, 166, 178);
+    text-decoration: none;
+}
+main .input_container .container p{
+    margin: 16px 0px;
+}
+main .input_container .container .input_box button{
+    width: 95%;
+    border-radius: 40px;
+    padding: 16px;
+}
+
+@media screen and (max-width:1024px){
+    main{
+        position: relative;
+    }
+    main .content{
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: transparent;
+    }
+    main .content .slogan{
+        display: none;
+    }
+    main .content .footer{
+        position: absolute;
+        bottom: 10%;
+        left: 0px;
+        z-index: 2;
+    }
+    main .content .footer a i:hover{
+        color: rgba(192, 147, 147, 0.459);
+    }
+    main .input_container{
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        position: relative;
+    }
+    main .input_container .container{
+        margin-bottom: 100px;
+    }
+    main .input_container .container .logo_box:hover{
+        text-shadow: 3px 3px 2px rgb(22, 36, 70);
+    }
+}
+@media screen and (max-width:768px){
+    main .input_container .container .input_box{
+        width: 100%;
+    }
+}
+@media screen and (max-width:640px){
+    main .input_container{
+        padding: unset;
+    }
+}
