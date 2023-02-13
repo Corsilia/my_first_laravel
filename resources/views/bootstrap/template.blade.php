@@ -159,7 +159,7 @@
 
     {{-- 頁面共通Js --}}
     <script src="{{asset('jquery.min.js')}}"></script>
-    <script src="{{asset('bootstrap-4.6.2-dist/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{asset('css/bootstrap-4.6.2-dist/js/bootstrap.bundle.js')}}"></script>
     {{-- 各頁面專用Js --}}
 </body>
 

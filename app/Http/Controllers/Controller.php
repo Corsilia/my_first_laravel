@@ -18,4 +18,8 @@ class Controller extends BaseController
     public function say(){
         return 'Hello 我在這';
     }
+
+    public function login(){
+        return view('shopping.login');
+    }
 }

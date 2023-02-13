@@ -6,12 +6,6 @@ use Illuminate\Http\Request;
 
 class ShoppingCartController extends Controller
 {
-    public function bootstrap_index(){
-        return view('bootstrap.bscdn');
-    }
-    public function bootstrap_about(){
-        return view('bootstrap.bscdn_about');
-    }
     public function shopping_index(){
         return view('shopping.index');
     }

@@ -19,22 +19,24 @@ use App\Http\Controllers\ShoppingCartController;
 // ↓這樣是以controller為主
 Route::get('/',[Controller::class, 'index']);
 
-Route::get('/microsoft',[NewsController::class, 'microsoft']);
-
 Route::get('/say',[Controller::class, 'say']);
 
-Route::get('/bs_index',[ShoppingCartController::class, 'bootstrap_index']);
-Route::get('/bs_about',[ShoppingCartController::class, 'bootstrap_about']);
+Route::get('/microsoft',[NewsController::class, 'microsoft']);
+
+Route::get('/bs_index',[NewsController::class, 'bootstrap_index']);
+Route::get('/bs_about',[NewsController::class, 'bootstrap_about']);
 
 
 // 這是沒有緣分還沒有做出來的登入頁
 // 做出來啦～
-Route::get('/login',[ShoppingCartController::class,'login']);
 Route::get('/shopping',[ShoppingCartController::class,'shopping_index']);
 Route::get('/checkout1',[ShoppingCartController::class,'checkout1']);
 Route::get('/checkout2',[ShoppingCartController::class,'checkout2']);
 Route::get('/checkout3',[ShoppingCartController::class,'checkout3']);
 Route::get('/checkout4',[ShoppingCartController::class,'checkout4']);
+
+
+Route::get('/login',[Controller::class,'login']);
 
 // ↓這樣是用Route去呼叫
 // Route::get('/', function () {
