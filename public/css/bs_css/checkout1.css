@@ -154,7 +154,6 @@ main section .content .list .list_project .input_box{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 main section .content .list .list_project .input_box .produce_price{
     font-size: 12px;
